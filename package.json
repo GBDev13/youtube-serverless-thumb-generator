@@ -1,5 +1,5 @@
 {
-  "name": "youtube-serverless-thumb",
+  "name": "serverless-thumb",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,21 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.8",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "chrome-aws-lambda": "^5.3.0",
+    "next": "9.5.3",
+    "puppeteer-core": "^5.3.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/marked": "^1.1.0",
+    "@types/node": "^14.10.2",
+    "@types/puppeteer-core": "^2.0.0",
+    "@types/react": "^16.9.49",
+    "@types/webpack-env": "^1.15.2",
+    "gray-matter": "^4.0.2",
+    "marked": "^1.1.1",
+    "raw-loader": "^4.0.1",
+    "typescript": "^4.0.2"
   }
 }
