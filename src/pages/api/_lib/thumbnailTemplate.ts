@@ -135,7 +135,7 @@ export function getHtml({
               <p><span>${experience}</span> xp</p>
             </li>
           </ul>
-          <img src="${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/logo-full.svg" alt="Logotipo Move.it" />
+          <a href="${process.env.NEXT_PUBLIC_NEXTAUTH_URL}"><img src="${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/logo-full.svg" alt="Logotipo Move.it" /></a>
         </section>
       </main>
     </body>
