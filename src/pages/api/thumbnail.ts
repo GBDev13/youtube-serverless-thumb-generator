@@ -10,7 +10,10 @@ export default async (
   res: NextApiResponse
 ): Promise<any> => {
   const query = req.query
-  if(query.image){
+
+  const isImage = Boolean(query.image)
+
+  if(isImage){
     try {
 
       const level = Number(query.level)
@@ -49,7 +52,7 @@ export default async (
       console.error(e)
     }
   }
-  if(!query.image)
+  if(!isImage)
   {
     try {
 
