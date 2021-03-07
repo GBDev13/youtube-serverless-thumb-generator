@@ -41,6 +41,12 @@ export function getHtml({
           justify-content: center;
           font-family: Inter, Helvetica, sans-serif;
           box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1;
+          width: 100%;
+          height: 100vh;
         }
         
         main {
