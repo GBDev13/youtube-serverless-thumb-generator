@@ -17,6 +17,8 @@ export function getHtml({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content="Vamos comemorar! Eu subi para o nível ${level}" />
+      <meta name="twitter:description" content="Consegui um novo nível depois de completar ${challenges} desafios no Move.it! Acumulando ${experience} xp!" />
+      <meta name="og:description" content="Consegui um novo nível depois de completar ${challenges} desafios no Move.it! Acumulando ${experience} xp!" />
       <meta name="og:title" content="Vamos comemorar! Eu subi para o nível ${level}" />
       <meta name="twitter:image" content="${`https://youtube-serverless-thumb-generator-rho.vercel.app/api/thumbnail.png?image=true&level=${level}&challenges=${challenges}&experience=${experience}`}" />
       <meta name="og:image" content="${`https://youtube-serverless-thumb-generator-rho.vercel.app/api/thumbnail.png?image=true&level=${level}&challenges=${challenges}&experience=${experience}`}" />
