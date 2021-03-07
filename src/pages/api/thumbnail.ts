@@ -21,7 +21,7 @@ export default async (
       const experience = Number(query.experience)
   
       if (!level || !challenges || !experience) {
-        throw new Error('Missing informations');
+        throw new Error(`${level}${challenges}${experience} Missing informations`);
       }
   
       const html = getHtml({ level, challenges, experience})
