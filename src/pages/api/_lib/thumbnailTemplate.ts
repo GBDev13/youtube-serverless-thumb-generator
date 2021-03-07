@@ -1,11 +1,9 @@
 interface GetHtmlProps {
   title: string;
-  thumbnail_bg?: string;
 }
 
 export function getHtml({
   title,
-  thumbnail_bg = '#8257e5'
 }: GetHtmlProps) {
   return `<!DOCTYPE html>
   <html lang="en">
@@ -22,10 +20,7 @@ export function getHtml({
         margin: 0;
         font-family: Roboto, sans-serif;
         color: #FFF;
-        background: ${thumbnail_bg};
-        background-image: 
-          radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.2) 2%, transparent 0%), 
-          radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.2) 2%, transparent 0%);
+        background: #121214;
         background-size: 100px 100px;
         height: 100vh;
       }
