@@ -12,13 +12,15 @@ export default async (
   try {
     const query = req.query
 
-    const title = String(query.title)
+    const level = Number(query.level)
+    const challenges = Number(query.challenges)
+    const experience = Number(query.experience)
 
-    if (!title) {
-      throw new Error('Title is required');
+    if (!level || !challenges || !experience) {
+      throw new Error('Missing informations');
     }
 
-    const html = getHtml({ title})
+    const html = getHtml({ level, challenges, experience})
 
     if (isHtmlDebug) {
       res.setHeader('Content-Type', 'text/html')
