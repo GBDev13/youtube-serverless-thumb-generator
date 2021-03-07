@@ -13,13 +13,12 @@ export default async (
     const query = req.query
 
     const title = String(query.title)
-    const thumbnail_bg = String(query.thumbnail_bg)
 
     if (!title) {
       throw new Error('Title is required');
     }
 
-    const html = getHtml({ title, thumbnail_bg })
+    const html = getHtml({ title})
 
     if (isHtmlDebug) {
       res.setHeader('Content-Type', 'text/html')
