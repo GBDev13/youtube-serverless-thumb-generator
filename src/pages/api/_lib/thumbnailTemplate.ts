@@ -15,7 +15,7 @@ export function getHtml({
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="twitter:image" content=${`https://youtube-serverless-thumb-generator-rho.vercel.app/api/thumbnail.png?image=true&level=${level}&challenges=${challenges}&experience=${experience}`}/>
+      <meta name="twitter:image" content="${`https://youtube-serverless-thumb-generator-rho.vercel.app/api/thumbnail.png?image=true&level=${level}&challenges=${challenges}&experience=${experience}`}" />
       <link rel="stylesheet" href="./style.css" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
